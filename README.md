@@ -1,5 +1,4 @@
 # LABPY03
-# labpy.03
 #### Nama   = MUHAMAD WAFA MUFIDA ZULFI
 #### Kelas  = TI.24.A4  
 #### NIM    = 312410334
@@ -30,31 +29,33 @@ Program ini menghasilkan sejumlah N angka acak yang nilainya selalu kurang dari 
 ## Penjelasan Kode
 
 ### 1. Import Library Random
-python
+```python
 from random import random
+````
 
 Kode ini mengimpor fungsi random() dari library random bawaan Python. Fungsi random() menghasilkan angka acak dalam rentang 0 hingga 1.
 
 ### 2. Input Nilai N
-python
+```python
 n = int(input("Masukkan nilai N: "))
-
+````
 Program meminta pengguna memasukkan nilai integer N, yang menunjukkan berapa kali loop akan dijalankan. Nilai ini menentukan jumlah angka acak yang ingin dihasilkan.
 
 ### 3. Looping dan Generasi Angka Acak
-python
+```python
 for i in range(1, n + 1):
+````
 
 Loop for ini berjalan dari 1 hingga N (inklusif). Pada setiap iterasi, variabel i akan menyimpan indeks iterasi saat ini.
 
 ### 4. Membuat Angka Acak
-python
+```python
 angka_acak = random()
-
+````
 Pada setiap iterasi, sebuah angka acak dihasilkan menggunakan fungsi random() dan disimpan dalam variabel angka_acak.
 
 ### 5. Kondisi Pemilihan
-python
+```python
 Salin kode
 if angka_acak < 0.5:
     print(f"data ke: {i} => {angka_acak}")
@@ -62,20 +63,22 @@ else:
     while angka_acak >= 0.5:
         angka_acak = random()
    print(f"data ke: {i} => {angka_acak}")
+````
 
 Jika angka_acak kurang dari `0.5`, maka angka langsung dicetak dengan `format data ke: {i} => {angka_acak}`.
 Jika angka_acak lebih besar atau sama dengan `0.5`, program akan masuk ke dalam loop while untuk terus menghasilkan angka acak baru hingga mendapatkan angka yang kurang dari `0.5`, lalu mencetak angka tersebut.
 
 ### 6. Akhir Program
-python
+```python
 print("Selesai")
+````
 
 Setelah semua angka yang diinginkan berhasil dihasilkan dan ditampilkan, program mencetak "Selesai" sebagai tanda bahwa proses telah berakhir.
 
 ## Contoh Output
 Jika pengguna memasukkan nilai `N = 5`, maka output yang dihasilkan mungkin terlihat seperti ini:
 
-python
+```python
 Masukkan nilai N: 5
 data ke: 1 => 0.3729648189127943
 data ke: 2 => 0.12069084128885188
@@ -83,11 +86,11 @@ data ke: 3 => 0.12486530658774031
 data ke: 4 => 0.4755389441515395
 data ke: 5 => 0.4919317309126129
 Selesai
-
+````
 
 ## Berikut adalah hasin screenshot vsc
 
-
+![Cuplikan layar 2024-11-01 165619](https://github.com/user-attachments/assets/be517f4c-4650-4444-a8e7-7483f9331017)
 
 ## Penjelasan Kode
 Import Modul Random: from random import random untuk mengimpor fungsi random() yang akan digunakan untuk menghasilkan angka acak.
